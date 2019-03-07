@@ -24,11 +24,11 @@ class TaxConfig(SpiderMan):
 
     def my_conn(self):
         if self.test:
-            self.conn = mysql.connector.connect(host='172.16.0.76', port=3306,
-                        user='fengyuanhua', passwd='!@#qweASD', db='shuiwu',charset='utf8')
+            self.conn = mysql.connector.connect(host='', port=3306,
+                        user='', passwd='', db='',charset='utf8')
         else:
-            self.conn = mysql.connector.connect(host='172.16.0.76', port=3306,
-                        user='fengyuanhua', passwd='!@#qweASD', db='taxplayer',charset='utf8')
+            self.conn = mysql.connector.connect(host='', port=3306,
+                        user='', passwd='', db='',charset='utf8')
         self.cursor = self.conn.cursor()
 
     def log_read(self, log_name, message):
